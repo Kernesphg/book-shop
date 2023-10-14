@@ -1,0 +1,22 @@
+@import './libs/normalize';
+body {
+  background-color: #fff;
+}
+.wrapper {
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.global-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1220px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+}

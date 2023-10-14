@@ -1,0 +1,384 @@
+.button_back {
+  display: flex;
+  width: 100px;
+  padding: 10px 20px 10px 15px;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(38, 96, 171);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  svg {
+    padding: 3px 0 0 0;
+  }
+  &:hover {
+    background-color: rgb(69, 117, 180);
+  }
+}
+
+.book_card {
+  display: flex;
+  margin: 30px 0 0 0;
+}
+.book_block {
+  max-width: 1000px;
+  margin: 0 auto auto 0;
+  display: flex;
+  img {
+    width: 300px;
+    margin: 0 30px 0 0;
+  }
+  .main_info {
+    flex: 1 1 auto;
+    .title {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 1%;
+      padding: 0 0 20px 0;
+    }
+    .author {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 1%;
+      margin-bottom: 20px;
+      color: #d2d2d2;
+    }
+  }
+
+  .counter {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto auto;
+    button {
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      border-radius: 32px;
+      border: none;
+      cursor: pointer;
+      background-color: rgb(234, 234, 234);
+      transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+      &:hover {
+        color: rgb(79, 79, 79);
+        background-color: rgb(221, 221, 221);
+      }
+      &.disable {
+        color: rgb(197, 197, 197);
+        background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+.order_registration {
+  background-color: rgb(228, 240, 255);
+  width: 25%;
+  padding: 36px;
+  margin: 0 0 auto auto;
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 23px;
+    padding: 0 0 10px 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 30px 0;
+  }
+  .button_add {
+    span {
+      color: white;
+      padding: 0 10px;
+    }
+    text-transform: uppercase;
+    background-color: rgb(38, 96, 171);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    padding: 20px 70px;
+    margin: auto auto;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    &:hover {
+      background-color: rgb(69, 117, 180);
+    }
+  }
+  .price_info {
+    display: flex;
+    .price {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 27px;
+      letter-spacing: 0.015em;
+      display: flex;
+      padding: 0 0 15px 0;
+      span {
+        color: red;
+        padding: 0 10px 0 0;
+      }
+      strong {
+        font-size: 22px;
+        color: #ababab;
+        text-decoration: line-through;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 1225px) {
+  .button_back {
+    display: flex;
+    width: 100px;
+    padding: 10px 20px 10px 15px;
+    align-items: center;
+    margin: 0 0 0 27px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(38, 96, 171);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    svg {
+      padding: 3px 0 0 0;
+    }
+    &:hover {
+      background-color: rgb(69, 117, 180);
+    }
+  }
+  .book_card {
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+    padding: 0 20px;
+  }
+  .book_block {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    img {
+      margin: 0 20px 30px 0;
+    }
+  }
+  .order_registration {
+    background-color: rgb(228, 240, 255);
+    width: 400px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    p {
+      font-size: 23px;
+      padding: 0 0 10px 0;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 30px 0;
+    }
+    .button_add {
+      span {
+        color: white;
+        padding: 0 10px;
+      }
+      text-transform: uppercase;
+      background-color: rgb(38, 96, 171);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      padding: 20px 70px;
+      margin: auto auto;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      &:hover {
+        background-color: rgb(69, 117, 180);
+      }
+    }
+    .price_info {
+      display: flex;
+      .price {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 27px;
+        letter-spacing: 0.015em;
+        display: flex;
+        padding: 0 0 15px 0;
+        span {
+          color: red;
+          padding: 0 10px 0 0;
+        }
+        strong {
+          font-size: 22px;
+          color: #ababab;
+          text-decoration: line-through;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .book_card {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .book_block {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    img {
+      margin: 0 0 30px 0;
+    }
+  }
+  .order_registration {
+    background-color: rgb(228, 240, 255);
+    width: 400px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    p {
+      font-size: 23px;
+      padding: 0 0 10px 0;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 30px 0;
+    }
+    .button_add {
+      span {
+        color: white;
+        padding: 0 10px;
+      }
+      text-transform: uppercase;
+      background-color: rgb(38, 96, 171);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      padding: 20px 70px;
+      margin: auto auto;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      &:hover {
+        background-color: rgb(69, 117, 180);
+      }
+    }
+    .price_info {
+      display: flex;
+      .price {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 27px;
+        letter-spacing: 0.015em;
+        display: flex;
+        padding: 0 0 15px 0;
+        span {
+          color: red;
+          padding: 0 10px 0 0;
+        }
+        strong {
+          font-size: 22px;
+          color: #ababab;
+          text-decoration: line-through;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 445px) {
+  .book_card {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .book_block {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    img {
+      margin: 0 0 30px 0;
+    }
+  }
+  .order_registration {
+    background-color: rgb(228, 240, 255);
+    width: 335px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box;
+    p {
+      font-size: 23px;
+      padding: 0 0 10px 0;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 30px 0;
+    }
+    .button_add {
+      span {
+        color: white;
+        padding: 0 10px;
+      }
+      text-transform: uppercase;
+      background-color: rgb(38, 96, 171);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      padding: 20px 70px;
+      margin: auto auto;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      &:hover {
+        background-color: rgb(69, 117, 180);
+      }
+    }
+    .price_info {
+      display: flex;
+      .price {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 27px;
+        letter-spacing: 0.015em;
+        display: flex;
+        padding: 0 0 15px 0;
+        span {
+          color: red;
+          padding: 0 10px 0 0;
+        }
+        strong {
+          font-size: 22px;
+          color: #ababab;
+          text-decoration: line-through;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

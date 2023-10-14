@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(38, 96, 171);
+    border: none;
+    color: white;
+    transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+    &.count {
+      background-color: white;
+      border: 2px solid rgb(38, 96, 171);
+      color: rgb(38, 96, 171);
+      &:hover {
+        border: 2px solid rgb(71, 125, 196);
+        background-color: white;
+        padding: 9px 14px;
+        color: rgb(71, 125, 196);
+      }
+    }
+    &:hover {
+      background-color: rgb(66, 125, 203);
+    }
+    &:active {
+      background-color: rgb(55, 110, 184);
+    }
+  }
+}

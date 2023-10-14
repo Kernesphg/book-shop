@@ -1,0 +1,76 @@
+.sort {
+  position: relative;
+  .label {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    b {
+      margin-right: 8px;
+    }
+
+    span {
+      width: 110px;
+      text-align: center;
+      color: rgb(38, 96, 171);
+      border-bottom: 1px dashed rgb(38, 96, 171);
+      cursor: pointer;
+    }
+    .order {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      margin: 0 0 0 15px;
+      padding: 0;
+      background-color: rgb(38, 96, 171);
+
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+      border: 1px solid transparent;
+      &:hover {
+        background-color: rgb(72, 123, 189);
+      }
+      &:active {
+        background-color: rgb(56, 96, 149);
+      }
+    }
+  }
+
+  .popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: orange;
+        }
+      }
+    }
+  }
+}

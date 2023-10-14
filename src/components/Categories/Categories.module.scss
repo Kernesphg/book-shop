@@ -1,0 +1,48 @@
+.categories {
+  ul {
+    display: flex;
+    max-width: 662px;
+
+    li {
+      background-color: #f9f9f9;
+      padding: 13px 30px;
+      border-radius: 30px;
+      margin-right: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+
+      &:hover {
+        background-color: darken(#f9f9f9, 2%);
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 5%);
+      }
+    }
+  }
+}
+@media (max-width: 690px) {
+  ul {
+    width: 475px;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  ul {
+    width: 420px;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  ul {
+    width: 310px;
+    overflow: auto;
+  }
+}
+.active {
+  background-color: rgb(38, 96, 171) !important;
+  color: #fff;
+}

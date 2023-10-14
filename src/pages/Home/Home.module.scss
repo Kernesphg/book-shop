@@ -1,0 +1,132 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.top_content {
+  padding: 0 0 40px 0;
+}
+
+@media (max-width: 1100px) {
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .top_content {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+}
+
+@media (max-width: 965px) {
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .top_content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+}
+@media (max-width: 720px) {
+  .content {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .top_content {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+}
+@media (max-width: 490px) {
+  .content {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .top_content {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .top_content {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+}
+
+.slider {
+  padding: 60px 0 0 0;
+}
+
+@media (max-width: 990px) {
+  .slider {
+    display: none;
+  }
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1030px) {
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 965px) {
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+
+.error {
+  text-align: center;
+  padding: 200px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  span {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    padding: 0 0 40px 0;
+  }
+  .button {
+    span {
+      color: white;
+      font-size: 18px;
+    }
+    background-color: rgb(38, 96, 171);
+    border-radius: 27px;
+    padding: 15px 40px;
+    margin: 30px 0 0 0;
+  }
+}

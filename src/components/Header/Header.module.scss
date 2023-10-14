@@ -1,0 +1,135 @@
+.header {
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 30px 0;
+  margin-bottom: 30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  .logo {
+    width: 52px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .header__logo {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 15px;
+    }
+
+    h1 {
+      color: #181818;
+      font-size: 24px;
+      letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    p {
+      color: #7b7b7b;
+    }
+  }
+}
+
+.header__cart {
+  .button {
+    background-color: rgb(38, 96, 171);
+    border-radius: 20px;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    padding: 8px 25px;
+    svg {
+      margin: 0 10px 0 0;
+    }
+    span {
+      color: white;
+    }
+    .delimiter {
+      width: 1px;
+      height: 25px;
+      background-color: rgba(255, 255, 255, 0.25);
+      margin-left: 14px;
+      margin-right: 14px;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .header {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    .logo {
+      width: 52px;
+    }
+    .container {
+      max-width: 930px;
+      width: 100%;
+      margin: 0 auto;
+      .header__logo {
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .container {
+    .header__logo {
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+  .header__cart {
+    .button {
+      background-color: rgb(38, 96, 171);
+      border-radius: 27px;
+      min-width: 60px;
+      height: 50px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      border: 1px solid transparent;
+      display: flex;
+      align-items: center;
+      line-height: 23px;
+      padding: 8px 20px;
+      position: relative;
+      svg {
+        margin: 0 0 0 0;
+      }
+      span {
+        color: white;
+        position: absolute;
+        top: -13px;
+        right: -3px;
+        background-color: red;
+        padding: 2px 8px;
+        border-radius: 30px;
+        color: white;
+        &.total_price {
+          display: none;
+        }
+      }
+      .delimiter {
+        width: 1px;
+        height: 25px;
+        background-color: rgba(255, 255, 255, 0.25);
+        margin-left: 14px;
+        margin-right: 14px;
+        display: none;
+      }
+    }
+  }
+}

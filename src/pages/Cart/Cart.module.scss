@@ -1,0 +1,294 @@
+.top_content {
+  display: flex;
+  align-items: center;
+  padding: 0 0 40px 0;
+  width: 60%;
+  justify-content: space-between;
+  span {
+    display: flex;
+    align-items: center;
+    color: rgb(38, 96, 171);
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.1s ease-in-out;
+    svg {
+      margin: 0 5px 0 0;
+      width: 17px;
+      stroke: rgb(38, 96, 171);
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.cart {
+  display: flex;
+}
+
+.books_list {
+  width: 60%;
+  .book_block {
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 0 30px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    .book_info {
+      display: flex;
+      .business_info {
+        position: absolute;
+        display: flex;
+        right: 0;
+        .counter {
+          width: 100px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 auto auto;
+          button {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            border-radius: 32px;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(234, 234, 234);
+            transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+            &:hover {
+              color: rgb(79, 79, 79);
+              background-color: rgb(221, 221, 221);
+            }
+            &.disable {
+              color: rgb(197, 197, 197);
+              background-color: rgb(255, 255, 255);
+            }
+          }
+        }
+        .price_info {
+          display: flex;
+          flex-direction: column;
+
+          .price {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: 0.015em;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 15px 0;
+            margin: 0 0 0 40px;
+            span {
+              color: red;
+            }
+            strong {
+              font-size: 15px;
+              margin: auto 0 auto auto;
+              color: #ababab;
+              text-decoration: line-through;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .main_info {
+        flex: 1 1 auto;
+        .title {
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: 1%;
+        }
+        .author {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 1%;
+          margin-bottom: 20px;
+          color: #d2d2d2;
+        }
+      }
+    }
+    .delete_button {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: opacity 0.25s ease-in-out, width 0.25ms ease;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:active {
+        opacity: 0.3;
+        width: 23px;
+      }
+    }
+
+    img {
+      width: 100px;
+      margin: 0 30px 0 0;
+    }
+  }
+}
+
+.order_registration {
+  background-color: rgb(228, 240, 255);
+  width: 35%;
+  padding: 36px;
+  margin: 0 0 auto auto;
+  display: flex;
+  flex-direction: column;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 30px 0;
+  }
+  .button_add {
+    span {
+      color: white;
+      padding: 0 10px;
+    }
+    text-transform: uppercase;
+    background-color: rgb(38, 96, 171);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    padding: 20px 70px;
+    margin: auto auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .top_content {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 40px 20px;
+    width: 100%;
+  }
+  .cart {
+    padding: 0 20px;
+    flex-direction: column;
+    .books_list {
+      width: 100%;
+      margin: 0 0 30px 0;
+      .book_block {
+        margin: 0 0 20px 0;
+        width: 100%;
+      }
+    }
+    .order_registration {
+      background-color: rgb(228, 240, 255);
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 665px) {
+  .cart {
+    padding: 0 20px;
+    flex-direction: column;
+    .books_list {
+      width: 100%;
+      .book_block {
+        margin: 0 0 30px 0;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid rgb(226, 226, 226);
+        max-width: 100%;
+
+        .book_info {
+          display: flex;
+          flex-direction: column;
+          .business_info {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .counter {
+              width: 100px;
+              display: flex;
+              margin: auto 0;
+              justify-content: space-between;
+            }
+            .price {
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 27px;
+              letter-spacing: 0.015em;
+              display: flex;
+              flex-direction: column;
+              padding: 0 0 15px 0;
+              margin: 20px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+
+    .order_registration {
+      background-color: rgb(228, 240, 255);
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 448px) {
+  .cart {
+    padding: 0 20px;
+    flex-direction: column;
+    .books_list {
+      width: 100%;
+      .book_block {
+        margin: 0 0 30px 0;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid rgb(226, 226, 226);
+        max-width: 100%;
+
+        .book_info {
+          display: flex;
+          flex-direction: column;
+          .business_info {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .counter {
+              width: 100px;
+              display: flex;
+              margin: auto 0;
+              justify-content: space-between;
+            }
+            .price {
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 27px;
+              letter-spacing: 0.015em;
+              display: flex;
+              flex-direction: column;
+              padding: 0 0 15px 0;
+              margin: 20px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+
+    .order_registration {
+      background-color: rgb(228, 240, 255);
+      max-width: 300px;
+      margin: 0 auto;
+      .button_add {
+        span {
+          color: white;
+          padding: 0 10px;
+        }
+        text-transform: uppercase;
+        background-color: rgb(38, 96, 171);
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        padding: 20px 20px;
+        margin: auto auto;
+      }
+    }
+  }
+}
